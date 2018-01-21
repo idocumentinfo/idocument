@@ -46,30 +46,28 @@ public String getValue(BusinessTerm keyword) {
 		    scanner = new Scanner(scannerText);		    
 		    String line = scanner.nextLine();
 		    scanner.close();
-		    int i = 0;
-		    int numbersInValue = 0;
-		    while (numbersInValue < keyword.getLength())
-		    { char c = line.charAt(i);
-		    System.out.println(c);
-		       if (keyword.getType().compareTo("number") ==0)
-		    	     {int cInt = Character.getNumericValue(c);
-		            if (cInt>-1) {
-		    	         if (cInt<10) {
-		    		       returnValue= returnValue + c;	    		       
-		    		       numbersInValue = numbersInValue+1;
-		    		       System.out.println("numbersInValue "+numbersInValue);	    		       
-		    		    };
-		    		    }
-                  }
-		       else returnValue= returnValue + c;
-		       numbersInValue = numbersInValue+1;
-		       System.out.println(returnValue);
-		       i = i + 1;}
-		    return returnValue;     
-		}
+		    if (keyword.getType().compareTo("number") ==0)
+		    {	int i = 0;
+		    		int numbersInValue = 0;
+		    		while (numbersInValue < keyword.getLength())
+		    			{ char c = line.charAt(i);
+		    				//System.out.println(c);
+		    				int cInt = Character.getNumericValue(c);
+		    				//System.out.println("cInt "+cInt);
+		    				if (cInt>-1) {
+		    					if (cInt<10) {
+		    						returnValue= returnValue + c;	    		       
+		    						numbersInValue = numbersInValue+1;
+		    								}
+		    							}
+		    				i = i+1;
+		    			}
+		    		return returnValue;     		    		
+		    }
+		    }
 		
-}		
-	return returnValue;	
+	}		
+	return "no value found";	
 }
 public String toString() {
 	return text;
@@ -104,6 +102,31 @@ public String getValueByPosition(int start,int numberOfWords) {
       }
 	return returnValue;
 }
+private boolean isSupported(String keyword) {
+	boolean returnValue = false;
+	switch (keyword) {
+    case "Rijksregisternummer":  returnValue = true;
+             break;
+    //case 2:  monthString = "February";
+    //         break;
+	}
+	return returnValue;}
+
+public String getValueOf(String keyword) {	
+	String errorMessage = "Error : Keyword "+keyword+"not supported";
+	//check if supported and so create the business term
+	boolean supported = isSupported(keyword);
+	BusinessTerm bt;
+	if (supported) {
+    //create BT
+		switch (keyword) {
+	    case "Rijksregisternummer":  bt = new BusinessTerm ("Rijksregisternummer",11,"number");
+		      return getValue(bt);
+	}
+	}
+	return errorMessage;
+}
+	
 private boolean isPdf(File file) {
     String name = file.getName();
     try {

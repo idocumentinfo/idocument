@@ -25,6 +25,7 @@ public class Synonyms {
      	kvs.addKeyValue("Rijksregisternummer", "rijksregisternummer");
      	kvs.addKeyValue("Rijksregisternummer", "Nationaal Identificatienummer");
      	kvs.addKeyValue("Rijksregisternummer", "N° d'identification national");
+     	kvs.addKeyValue("Rijksregisternummer", "Rijksregisternr");
      	kvs.addKeyValue("Rijksregisternummer", "RR/NN :");
      	kvs.addKeyValue("Rijksregisternummer", "RR/NN");
      	kvs.addKeyValue("Datum", "Datum :");
@@ -50,9 +51,31 @@ public class Synonyms {
      	kvs.addKeyValue("Maand van de berekening","VARIABLE PAY YEAR OF REFERENCE ");
      	kvs.addKeyValue("Jaar van de berekening", "van de premie ");
      	kvs.addKeyValue("Factuurnummer", "Factuurnummer ");
+     	kvs.addKeyValue("Factuurnummer", "cbc:ID");
+     	kvs.addKeyValue("Factuurnummer", "document_number");
      	kvs.addKeyValue("Factuurdatum", "Factuurdatum ");
+     	kvs.addKeyValue("Factuurdatum", "cbc:IssueDate");
+     	kvs.addKeyValue("Factuurdatum", "date_document");
      	kvs.addKeyValue("Vervaldatum", "Vervaldatum ");
+     	kvs.addKeyValue("Vervaldatum", "cbc:PaymentDueDate");
+     	kvs.addKeyValue("Vervaldatum", "planned_payment_date");
+     	kvs.addKeyValue("Bestelbon", "Bestelbonnr: ");
+     	kvs.addKeyValue("Bestelbon", "Bestelbonnummer ");
+     	kvs.addKeyValue("Bestelbon", "Bestelbon: ");
+     	kvs.addKeyValue("Bestelbon", "ponumber");
+     	//kvs.addKeyValue("Totaal bedrag", "Totaal ");
+     	kvs.addKeyValue("Totaal bedrag", "Totaal (excl. btw) ");
+     	kvs.addKeyValue("Totaal incl BTW","inv_total_gross_amount");
+     	kvs.addKeyValue("Totaal BTW","invoice_total_of_vat");
+     	
+     	kvs.addKeyValue("Factuurlijn", "detail");
+     	kvs.addKeyValue("Klantnaam", "customer_name");
+     	kvs.addKeyValue("Klantstraat", "adrs02");
+     	kvs.addKeyValue("Klantpostcode","post02");
+     	kvs.addKeyValue("Klantland","land02");
+     	//kvs.addKeyValue("Klantid","");
 
+     	
 
      	
      
