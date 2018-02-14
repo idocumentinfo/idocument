@@ -53,21 +53,27 @@ public class Synonyms {
      	kvs.addKeyValue("Factuurnummer", "Factuurnummer ");
      	kvs.addKeyValue("Factuurnummer", "cbc:ID");
      	kvs.addKeyValue("Factuurnummer", "document_number");
+     	kvs.addKeyValue("Factuurnummer", "Factuur N°:");
      	kvs.addKeyValue("Factuurdatum", "Factuurdatum ");
+     	kvs.addKeyValue("Factuurdatum", "Factuurdatum :");
      	kvs.addKeyValue("Factuurdatum", "cbc:IssueDate");
      	kvs.addKeyValue("Factuurdatum", "date_document");
      	kvs.addKeyValue("Vervaldatum", "Vervaldatum ");
      	kvs.addKeyValue("Vervaldatum", "cbc:PaymentDueDate");
      	kvs.addKeyValue("Vervaldatum", "planned_payment_date");
+     	kvs.addKeyValue("Vervaldatum", "Vervaldatum :");
      	kvs.addKeyValue("Bestelbon", "Bestelbonnr: ");
      	kvs.addKeyValue("Bestelbon", "Bestelbonnummer ");
      	kvs.addKeyValue("Bestelbon", "Bestelbon: ");
      	kvs.addKeyValue("Bestelbon", "ponumber");
+     	kvs.addKeyValue("Bestelbon","Uw referentie :");
      	//kvs.addKeyValue("Totaal bedrag", "Totaal ");
      	kvs.addKeyValue("Totaal bedrag", "Totaal (excl. btw) ");
+     	kvs.addKeyValue("Totaal bedrag", "subtotaal ");
      	kvs.addKeyValue("Totaal incl BTW","inv_total_gross_amount");
+     	kvs.addKeyValue("Totaal incl BTW","Totaal");
      	kvs.addKeyValue("Totaal BTW","invoice_total_of_vat");
-     	
+     	kvs.addKeyValue("Totaal BTW","BTW (21%)");
      	kvs.addKeyValue("Factuurlijn", "detail");
      	kvs.addKeyValue("Klantnaam", "customer_name");
      	kvs.addKeyValue("Klantstraat", "adrs02");

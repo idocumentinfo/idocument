@@ -137,5 +137,10 @@ private boolean isPdf(File file) {
     }
     return false;
 }
+public boolean exists(String snippet) {
+	int start = text.indexOf(snippet); 
+	//System.out.println("start = "+start +"of synoniem "+kw);
+	if (start>-1) {return true;} else {return false;}
 
+}
 }
