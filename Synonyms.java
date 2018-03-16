@@ -54,6 +54,8 @@ public class Synonyms {
      	kvs.addKeyValue("Factuurnummer", "cbc:ID");
      	kvs.addKeyValue("Factuurnummer", "document_number");
      	kvs.addKeyValue("Factuurnummer", "Factuur N°:");
+     	kvs.addKeyValue("Factuurnummer", "Documentnummer");
+     	kvs.addKeyValue("Factuurnummer", "Factuur nr");
      	kvs.addKeyValue("Factuurdatum", "Factuurdatum ");
      	kvs.addKeyValue("Factuurdatum", "Factuurdatum :");
      	kvs.addKeyValue("Factuurdatum", "cbc:IssueDate");

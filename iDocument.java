@@ -4,9 +4,8 @@ package be.idocument;
 import java.io.File;
 /*copyright Johan Platteau, granted full license to Perspektiv Consult*/
 import java.io.IOException;
-import java.util.Scanner;
 import java.util.ArrayList;
-
+import java.util.Scanner;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.encryption.InvalidPasswordException;
@@ -43,7 +42,7 @@ public String getValue(BusinessTerm keyword) {
 		if (start>-1) {
 			//create a scanner of the text cut of at the index	
 		    String scannerText = text.substring(start);
-		    scanner = new Scanner(scannerText);		    
+		    scanner = new Scanner(scannerText);
 		    String line = scanner.nextLine();
 		    scanner.close();
 		    if (keyword.getType().compareTo("number") ==0)

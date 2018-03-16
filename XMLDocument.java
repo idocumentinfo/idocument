@@ -32,14 +32,18 @@ public class XMLDocument {
 }
 	public String getValue(BusinessTerm keyword){	
 		ArrayList<String> syn = synonyms.getAllSynonyms(keyword.getName());
-		String returnValue ="";
+		String possibleValue ="";
 		for (String kw : syn){	
+		
 			NodeList nodeList = parsedDocument.getElementsByTagName(kw.toString());	
 			//System.out.println(nodeList);
 			if (nodeList.item(0) == null) {}
-			else returnValue = nodeList.item(0).getTextContent();
+			else {possibleValue = nodeList.item(0).getTextContent();
+			System.out.println("return is "+possibleValue + " " +nodeList.item(0));
 			}
-	return returnValue;	
+		}
+		String returnValue = possibleValue;
+		return returnValue;	
 	}
 	public NodeList getComplexValue(BusinessTerm keyword){	
 		ArrayList<String> syn = synonyms.getAllSynonyms(keyword.getName());
