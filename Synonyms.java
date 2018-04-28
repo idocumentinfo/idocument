@@ -69,27 +69,26 @@ public class Synonyms {
      	kvs.addKeyValue("Bestelbon", "Bestelbon: ");
      	kvs.addKeyValue("Bestelbon", "ponumber");
      	kvs.addKeyValue("Bestelbon","Uw referentie :");
+     	kvs.addKeyValue("Bestelbon","cbc:BuyerReference");
+     	
      	//kvs.addKeyValue("Totaal bedrag", "Totaal ");
      	kvs.addKeyValue("Totaal bedrag", "Totaal (excl. btw) ");
      	kvs.addKeyValue("Totaal bedrag", "subtotaal ");
+     	kvs.addKeyValue("Totaal bedrag", "cbc:TaxableAmount");
      	kvs.addKeyValue("Totaal incl BTW","inv_total_gross_amount");
      	kvs.addKeyValue("Totaal incl BTW","Totaal");
+     	kvs.addKeyValue("Totaal excl BTW","Totaal");
      	kvs.addKeyValue("Totaal BTW","invoice_total_of_vat");
      	kvs.addKeyValue("Totaal BTW","BTW (21%)");
+     	kvs.addKeyValue("Totaal BTW","cbc:TaxAmount");
      	kvs.addKeyValue("Factuurlijn", "detail");
+     	kvs.addKeyValue("Factuurlijn","cac:InvoiceLine");
      	kvs.addKeyValue("Klantnaam", "customer_name");
+     	kvs.addKeyValue("Klantnaam", "<cac:PartyName><cbc:Name>");
+     	kvs.addKeyValue("Klant", "cac:AccountingCustomerParty");
      	kvs.addKeyValue("Klantstraat", "adrs02");
      	kvs.addKeyValue("Klantpostcode","post02");
      	kvs.addKeyValue("Klantland","land02");
-     	//kvs.addKeyValue("Klantid","");
-
-     	
-
-     	
-     
-     	
-
-     	
-     	
+     	kvs.addKeyValue("BTW percentage","cbc:Percent");  	
 	}
 }
